@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Buffers">
+      <UniqueIdentifier>{A947D8FD-15FD-50F3-9EF1-4ACA0AA647F7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Entropy">
+      <UniqueIdentifier>{6DF776D5-D9AC-EFCA-62A1-E9A1CE55E6CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Graphics">
+      <UniqueIdentifier>{0D564864-F9B8-D708-A23E-10BF8E80A38B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Graphics\Shaders">
+      <UniqueIdentifier>{E6377433-D2C6-FDFC-7BE5-11F867530EA3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Graphics\Textures">
+      <UniqueIdentifier>{80461FDE-ECB2-DAD8-B5A6-723621D2FC40}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Buffers\ElementBuffer.h">
+      <Filter>src\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Buffers\VertexArray.h">
+      <Filter>src\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Buffers\VertexBuffer.h">
+      <Filter>src\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Buffers\VertexBufferLayout.h">
+      <Filter>src\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entropy\Buffers.h">
+      <Filter>src\Entropy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entropy\Core.h">
+      <Filter>src\Entropy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entropy\Graphics.h">
+      <Filter>src\Entropy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\Renderer.h">
+      <Filter>src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\Shaders\Shader.h">
+      <Filter>src\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\Textures\Texture.h">
+      <Filter>src\Graphics\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\Window.h">
+      <Filter>src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\enpch.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="glad.c" />
+    <ClCompile Include="src\Buffers\ElementBuffer.cpp">
+      <Filter>src\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Buffers\VertexArray.cpp">
+      <Filter>src\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Buffers\VertexBuffer.cpp">
+      <Filter>src\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\Renderer.cpp">
+      <Filter>src\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\Textures\Texture.cpp">
+      <Filter>src\Graphics\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\Window.cpp">
+      <Filter>src\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enpch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="stb.cpp" />
+  </ItemGroup>
+</Project>
