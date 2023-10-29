@@ -1,5 +1,6 @@
 #include "enpch.h"
 #include "Window.h"
+#include "Camera.h"
 
 void window_resize(GLFWwindow* window, int width, int height);
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
@@ -7,11 +8,8 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 void cursor_position_callback(GLFWwindow* window, double xpos, double ypos);
 
 Window::Window(const char* title, int width, int heigth)
+	: _title(title), _width(width), _heigth(heigth)
 {
-	_title = title;
-	_width = width;
-	_heigth = heigth;
-
 	if (!init())
 		Window::~Window();
 
@@ -46,6 +44,7 @@ bool Window::init()
 		glfwTerminate();
 		return false;
 	}
+
 	glfwMakeContextCurrent(_window);
 	glfwSetWindowUserPointer(_window, this);
 	glfwSetWindowSizeCallback(_window, window_resize);
@@ -58,6 +57,8 @@ bool Window::init()
 		std::cout << "Failed to initialize GLAD" << std::endl;
 		return false;
 	}
+
+	glEnable(GL_DEPTH_TEST);
 
 	return true;
 }

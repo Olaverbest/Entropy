@@ -4,6 +4,7 @@ bin/
 bin-int/
 x64/
 Entropy/x64/
+Sandbox/vendor/
 
 # Files
 *.user

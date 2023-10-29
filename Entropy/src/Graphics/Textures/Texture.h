@@ -23,6 +23,8 @@ public:
 
 	inline int GetWidth() const { return _Width; }
 	inline int GetHeigth() const { return _Heigth; }
+
+	inline int GetTextureID() const;
 };
 
 #endif

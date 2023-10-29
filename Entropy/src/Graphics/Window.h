@@ -17,6 +17,7 @@ private:
 	unsigned int _width, _heigth;
 	GLFWwindow* _window;
 	bool _closed;
+	float _deltaTime;
 
 	bool _Keys[MAX_KEYS];
 	bool _MouseButtons[MAX_BUTTONS];
@@ -26,14 +27,13 @@ public:
 	~Window();
 
 	void clear();
-	void background(float r, float g, float b , float a);
+	void background(float r, float g, float b, float a);
 	void update();
 	bool closed();
 
 	GLFWwindow* get() { return _window; }
 
 	virtual void processInput(Window* window);
-	//GLFWwindow* window
 
 	bool getKeyPressed(unsigned int keycode) const;
 	bool getMouseButtonPressed(unsigned int button) const;

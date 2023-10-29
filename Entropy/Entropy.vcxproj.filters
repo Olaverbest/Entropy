@@ -13,6 +13,9 @@
     <Filter Include="src\Graphics">
       <UniqueIdentifier>{0D564864-F9B8-D708-A23E-10BF8E80A38B}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Graphics\Models">
+      <UniqueIdentifier>{20F7C2BD-8C58-A0CB-15C6-E67D8126D78A}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\Graphics\Shaders">
       <UniqueIdentifier>{E6377433-D2C6-FDFC-7BE5-11F867530EA3}</UniqueIdentifier>
     </Filter>
@@ -41,6 +44,18 @@
     </ClInclude>
     <ClInclude Include="src\Entropy\Graphics.h">
       <Filter>src\Entropy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entropy\Math.h">
+      <Filter>src\Entropy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\Camera.h">
+      <Filter>src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\Models\Mesh.h">
+      <Filter>src\Graphics\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\Models\Model.h">
+      <Filter>src\Graphics\Models</Filter>
     </ClInclude>
     <ClInclude Include="src\Graphics\Renderer.h">
       <Filter>src\Graphics</Filter>

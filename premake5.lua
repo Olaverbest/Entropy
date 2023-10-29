@@ -36,12 +36,14 @@ project "Entropy"
 		"%{SolutionDir}/Dependencies/GLFW/include",
 		"%{SolutionDir}/Dependencies/glad",
 		"%{SolutionDir}/Dependencies/glm",
-		"%{SolutionDir}/Dependencies/stb"
+		"%{SolutionDir}/Dependencies/stb",
+		"%{SolutionDir}/Dependencies/assimp/include"
     }
 
 	libdirs
 	{
-		"%{SolutionDir}/Dependencies/GLFW/lib-vc2022"
+		"%{SolutionDir}/Dependencies/GLFW/lib-vc2022",
+		"%{SolutionDir}/Dependencies/assimp/lib"
 	}
 
     links
@@ -50,7 +52,8 @@ project "Entropy"
         "opengl32.lib",
 		"User32.lib",
 		"Gdi32.lib",
-		"Shell32.lib"
+		"Shell32.lib",
+		"assimp-vc143-mt.lib"
     }
 
 	filter { "files:Entropy/glad.c" }
@@ -112,12 +115,14 @@ project "Sandbox"
 			"%{SolutionDir}/Dependencies/GLFW/include",
 			"%{SolutionDir}/Dependencies/glad",
 			"%{SolutionDir}/Dependencies/glm",
-			"%{SolutionDir}/Dependencies/stb"
+			"%{SolutionDir}/Dependencies/stb",
+			"%{SolutionDir}/Dependencies/assimp/include"
         }
 
 		libdirs
 		{
-			"%{SolutionDir}/Dependencies/GLFW/lib-vc2022"
+			"%{SolutionDir}/Dependencies/GLFW/lib-vc2022",
+			"%{SolutionDir}/Dependencies/assimp/lib"
 		}
 
         links
@@ -127,7 +132,8 @@ project "Sandbox"
 			"opengl32.lib",
 			"User32.lib",
 			"Gdi32.lib",
-			"Shell32.lib"
+			"Shell32.lib",
+			"assimp-vc143-mt.lib"
     	}
 
         filter "system:windows"
